@@ -23,7 +23,7 @@ const connect = () => {
 
 const corsOptions = {
     // AccessControlAllowOrigin: '*',
-    origin: "http://localhost:3000",
+    origin: "https://youtube-clone-r7js.onrender.com",
     // methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     Credential: true,
 };
