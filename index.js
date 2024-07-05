@@ -46,7 +46,7 @@ app.use((err, req, res, next) => {
     })
 })
 
-app.listen("https://youtube-clone-r7js.onrender.com", () => {
+app.listen(8800, () => {
     connect()
     console.log("connected to server!!")
 })
