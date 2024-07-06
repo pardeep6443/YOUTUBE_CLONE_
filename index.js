@@ -23,7 +23,7 @@ const connect = () => {
 
 const corsOptions = {
     // AccessControlAllowOrigin: '*',
-    origin: "https://youtube-clone-r7js.onrender.com",
+    origin: "https://metube-frontend.vercel.app/",
     // methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     Credential: true,
 };
