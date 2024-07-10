@@ -23,7 +23,7 @@ const connect = () => {
 
 const corsOptions = {
     // AccessControlAllowOrigin: '*',
-    origin: "https://youtube-clone-frontend-gules.vercel.app/",
+    origin: "https://668e3d27ecf80507416f82d7--dashing-bombolone-1ea557.netlify.app",
     // methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     Credential: true,
 };
