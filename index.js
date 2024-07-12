@@ -22,9 +22,9 @@ const connect = () => {
 }
 
 const corsOptions = {
-    // AccessControlAllowOrigin: '*',
+     AccessControlAllowOrigin: '*',
     origin: "https://dashing-bombolone-1ea557.netlify.app",
-    // methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     Credential: true,
 };
 
