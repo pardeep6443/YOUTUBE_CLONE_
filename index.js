@@ -38,7 +38,7 @@ app.use("/api/comments", commentRoutes)
 
 app.use((err, req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    
     const status = err.status || 500;
     const message = err.status || "something went wrong!";
     return res.status(status).json({
