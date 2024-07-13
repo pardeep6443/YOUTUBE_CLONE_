@@ -22,9 +22,9 @@ const connect = () => {
 }
 
 const corsOptions = {
-     AccessControlAllowOrigin: '*',
+    // AccessControlAllowOrigin: '*',
     origin: "https://dashing-bombolone-1ea557.netlify.app/",
-     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+   //  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     Credential: true,
 };
 
@@ -37,6 +37,8 @@ app.use("/api/videos", videoRoutes)
 app.use("/api/comments", commentRoutes)
 
 app.use((err, req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     const status = err.status || 500;
     const message = err.status || "something went wrong!";
     return res.status(status).json({
